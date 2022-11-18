@@ -11,16 +11,18 @@
   <modules>
     <module>customer</module>
       <module>fraud</module>
+    <module>eureka-server</module>
   </modules>
 
   <name>tilmeezservices</name>
   <url>https://www.tilmeez.com</url>
   <properties>
-    <maven.compiler.source>18</maven.compiler.source>
-    <maven.compiler.target>18</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.boot.maven.plugin.version>2.7.5</spring.boot.maven.plugin.version>
     <spring.boot.dependecies.version>2.7.5</spring.boot.dependecies.version>
+    <spring.cloud-version>2022.0</spring.cloud-version>
   </properties>
 
   <dependencyManagement>
@@ -31,6 +33,14 @@
         <version>${spring.boot.dependecies.version}</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>2021.0.5</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -44,6 +54,7 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
+
   </dependencies>
 
   <build>
