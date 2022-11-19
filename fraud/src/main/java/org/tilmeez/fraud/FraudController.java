@@ -3,6 +3,7 @@ package org.tilmeez.fraud;/*
 *create by TilmeezUrRehmanBhatti created on 15/11/2022
 */
 
+import com.tilmeez.clients.fraud.FraudCheckResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
